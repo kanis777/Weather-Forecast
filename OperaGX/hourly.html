@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!--Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <title>Weather Forecast</title>
+
+     <style>
+        .banner-image{
+            background-image: url('bgimg.jpg');
+            /*background-size: cover; */
+        }
+     </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--creating a navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a href="#" class="navbar-brand"><h3>The Weather</h3></a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-target="#navbarNav"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-lable="Toggle Navbar"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="front.html" class="nav-link text-white"><h4>Today</h4></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="hourly.html" class="nav-link text-white"><h4>Hourly Forecast</h4></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="weekly.html" class="nav-link text-white"><h4>Weekly Forecast</h4></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="https://www.ndtv.com/topic/weather" class="nav-link text-white"><h4>Latest News</h4></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white"><h4>About Us</h4></a>
+                    </li>
+
+                   
+                    
+                </ul>
+            </div>
+ 
+ 
+ 
+        </div>
+
+    </nav>
+    <!--backgroung image-->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <!-- <h1 class="text-white">Name</h1> -->
+            <h3 class="mb-4 pb-2 fw-normal text-white align="center">Check the weather forecast</h3>
+            <div class="input-group rounded mb-3">
+                <input type="search" class="form-control rounded" id="cityinput" placeholder="City" aria-label="Search" aria-describedby="search-addon" />
+                    <a href="#!" type="button">
+                      <span class="input-group-text border-0 fw-bold" id="add">
+                        Check!
+                      </span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    
+    <!--main-->
+    <div class="container py-3">
+        <div class="row text-center text-black">
+            <div class="col-lg-8 mx-auto">
+                <h6 class="display">Hourly Forecast</h6>
+            </div>
+        </div>
+    </div> <!--End -->
+    
+    
+    <div class="container" style="background-color: #f4bc01; height:1880px; padding-top:80px;">
+        <div class="row text-center">
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon2" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="1sthour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="1sttemp">datetime</span> 
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain1">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis1">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws1">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+            
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon2" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="2ndhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="2ndtemp">datetime</span> 
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain2">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis2">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws2">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon3" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="3rdhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="3rdtemp">datetime</span>   
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain3">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis3">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws3">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon4" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="4thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="4thtemp">datetime</span> 
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain4">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis4">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws4">windspeed</span>      
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+        </div>
+
+
+        <div class="row text-center">
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon5" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="5thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="5thtemp">datetime</span>   
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain5">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis5">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws5">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon6" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="6thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="6thtemp">datetime</span>     
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain6">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis6">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws6">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon7" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="7thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="7thtemp">datetime</span>     
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain7">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis7">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws7">windspeed</span>
+                    
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon8" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="8thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="8thtemp">datetime</span>      
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain8">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis8">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws8">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon5" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="9thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="9thtemp">datetime</span>        
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain9">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis9">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws9">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon6" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="10thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="10thtemp">datetime</span>          
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain10">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis10">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws10">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon7" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="11thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="11thtemp">datetime</span>              
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain11">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis11">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws11">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+    
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/weather-icon-illustration03-Graphics-10205167-1.jpg" id="icon8" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Time</h5><span class="small text-uppercase text-muted" id="12thhour">datetime</span>
+                    <h5 class="mb-0"></h5><span class="small text-uppercase text-muted" id="12thtemp">datetime</span>              
+                    <h5 class="mb-0">Rain</h5><span class="small text-uppercase text-muted" id="rain12">datetime</span>
+                    <h5 class="mb-0">Visibility</h5><span class="small text-uppercase text-muted" id="vis12">datetime</span>
+                    <h5 class="mb-0">WindSpeed</h5><span class="small text-uppercase text-muted" id="ws12">windspeed</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- End -->
+
+
+        </div>
+
+    </div>
+
+    <!-- <div class="container my-5 d-grip gap-5 ">
+        <div class="p-5 border">Hello</div>
+    </div> -->
+
+    
+  
+    <script src="hourlyscript.js"></script>
+
+
+
+</body>
+
+</html>
+
+<!-- https://api.open-meteo.com/v1/forecast?latitude=11.00&longitude=77.50&hourly=temperature_2m -->

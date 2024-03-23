@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Climate Negotiations</title>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+
+  <section class="vh-100 w-100" style="background-color: hsl(216, 31%, 64%); ">
+    <br>
+    <!-- <div class="input-group">
+      <div class="col-xs-5">
+        <input type="text" class="form-control" placeholder="Enter City name" id="cityinput" aria-label="cityname" aria-describedby="basic-addon2">
+      </div>
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary mb" id="add">Search</button>
+      </div>
+    </div> 
+
+    <div class="container py-5 h-100">-->
+
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-8 col-lg-6 col-xl-4">
+  
+          <h3 class="mb-4 pb-2 fw-normal text-white align="center">Check the weather forecast</h3>
+  
+          <div class="input-group rounded mb-3">
+            <input type="search" class="form-control rounded" id="cityinput" placeholder="City" aria-label="Search"
+              aria-describedby="search-addon" />
+            <a href="#!" type="button">
+              <span class="input-group-text border-0 fw-bold" id="add">
+                Check!
+              </span>
+            </a>
+          </div>
+  
+          <div class="mb-4 pb-2">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                value="option1" checked />
+              <label class="form-check-label text-white" for="inlineRadio1">Celsius</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                value="option2" />
+              <label class="form-check-label text-white" for="inlineRadio2">Farenheit</label>
+            </div>
+          </div>
+        </div>
+      <!-- </div>
+    </div> -->
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg">
+        <div class="card  bg-dark text-white" style="border-radius: 35px; ">
+          <div class="bg-image" style="border-radius: 35px;">
+            <img src="https://th.bing.com/th/id/OIP.fo8GO5vmUoxus244M8RJ7gHaER?w=309&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+              class="card-img" alt="weather" />
+            <div class="mask" style="background-color: rgba(154, 27, 27, 0.5);"></div>
+          </div>
+          <div class="card-img-overlay text-white p-5">
+            <h4 class="mb-0" id="cityoutput">Juneau, Alaska, US</h4>
+            <p class="display-2 my-3" id="temp">1.28°C</p>
+            <p class="mb-2" id="feel">Feels Like: <strong>-1.08 °C</strong></p>
+            <h5 class="mb-0" id="description">Snowy</h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h5>Air Quality</h5>
+                </div>
+                <div class="col-sm">
+                  <h5>Wind Speed</h5>
+                </div>
+                <div class="col-sm">
+                  <h5>Humidity</h5>
+                </div>
+                <div class="col-sm">
+                  <h5>Visibilty</h5>
+                </div>
+                <div class="col-sm">
+                  <h5>Pressure</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <h5 id="airqaulity">326</h5>
+                </div>
+                <div class="col-sm">
+                  <h5 id="wind">9 km/hr</h5>
+                </div>
+                <div class="col-sm">
+                  <h5 id="humidity">87</h5>
+                </div>
+                <div class="col-sm">
+                  <h5 id="visibility">3 km</h5>
+                </div>
+                <div class="col-sm">
+                  <h5 id="pressure">1012 mb</h5>
+                </div>
+              </div>
+            </div>
+            <!--<div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- <div class="col-lg-4">
+        <div class="card"></div>
+          <div class="card-body">
+            <h5 class="card-title" align="center">Suggestions for today</h5>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-4">
+        <h4 align="center" text-white>Suggestions for the day</h4>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card bg-dark text-white">
+              <div class="bg-image" style="border-radius: 35px;">
+                <img src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=170667a&w=is&k=20&c=Ft3O7EB5HFa9gbf2bfUEm9onlijRiTwqR-xekE6hFK0="
+                  class="card-img" alt="weather" />
+                <div class="mask" style="background-color: rgba(154, 27, 27, 0.5);"></div> 
+              </div>
+              <div class="card-img-overlay text-whitep-5">
+                <br>
+                <br>
+                <h4>Umbrella</h4>
+                <p id="umbrella">No need</p>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="bg-image" style="border-radius: 35px;">
+                <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/97/47/2257f0ce6cb6fec.jpg"
+                  class="card-img" alt="weather" />
+                <div class="mask" style="background-color: rgba(154, 27, 27, 0.5);"></div>
+              </div>
+              <div class="card-img-overlay text-black">
+                <h4 align="right">Outdoors</h4>
+                <p align="right" id="outdoors">Cycling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="bg-image" style="border-radius: 35px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwQyWPew8Wzl8YLVLiQaExHjI0mgGJG3ssQvIl9pGjbWYC5r0OJcVP6zlGhA6jPuH84M&usqp=CAU"
+                  class="card-img" alt="weather" />
+                <div class="mask" style="background-color: rgba(154, 27, 27, 0.5);"></div>
+                <div class="card-img-overlay text-white p-5">
+                  <h4>Clothing</h4>
+                  <p id="clothing">Shorts</p>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-25">
+              <div class="bg-image" style="border-radius: 35px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4VkVF8tjSlii6rpSISUtKGCRCHIpQeiHag&usqp=CAU"
+                  class="card-img" alt="weather" />
+                <div class="mask" style="background-color: rgba(154, 27, 27, 0.5);"></div>
+                <div class="card-img-overlay text-white p-5">
+                  <h4 align="center">UV index</h4>
+                  <p align="center"id="uvindex">Moderate</p>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </section>
+  
+  <script src="key.js"></script>
+  <script src="weatherscripttry.js"></script>
+
+
+</body>
+</html>

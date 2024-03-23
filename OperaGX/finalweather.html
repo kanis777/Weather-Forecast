@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Bootstrap CSS-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+    <link rel ="stylesheet" href="style.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Climate Negotiations</title>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    
+    <div class="wrapper">
+        <div class="sidebar">
+            <div>
+                <form action="" class="search" id="search">
+                    <input type="text" id="query" placeholder="Search">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <div class="weathericon">
+                    <img src="https://th.bing.com/th/id/R.770b805d5c99c7931366c2e84e88f251?rik=khgO%2bY1Hh3BT9w&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png&ehk=6msbAydV7X6D4bO8zvLC664aXwKOdBU17dwrHcKxaAg%3d&risl=&pid=ImgRaw&r=0" alt="" id="icon">
+                </div>
+                
+                <div class="temperature"> 
+                    <p class="display-2 my-3" id="temp">45°C</p>
+                 </div>
+
+                <div class="date time"> 
+                   <p id="date time">MONDAY,17:24</p>
+                </div>
+
+                <div class="divider"></div>
+                <div class="condition-rain">
+                    <div class="condition">
+                        <i class="fas fa-cloud"></i>
+                        <div class="condition" id="condition">condition</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="main">
+            <nav>
+                <ul class="option">
+                    <button class="hourly">today</button>
+                    <button class="weekly active">week</button>
+                </ul>
+                <ul class="options units">
+                    <button class="celsius active">°C</button>
+                    <button class="fahrenheit">°F</button>
+                </ul>
+            </nav>
+            <div class="cards" id="weathercards">
+                <div class="card">
+                    <h2 class="dayname">MONDAY</h2>
+                    <div class="cardicon">
+                        <img src="https://cdn1.iconfinder.com/data/icons/weather-filled-outline-1/50/Weather_Filled_Outline-01-512.png" alt=" "/>
+                    </div>
+                    <div class="daytemp">
+                        <h2 class="temp">32 °C</h2>
+                        <!-- <span class="tempunit"></span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="highlights">
+                <h2 class="heading">today's highlights</h2>
+                    <div class="cards">
+                        <div class="card2">
+                            <h4 class="card-heading">UV Index</h4>
+                            <div class="content">
+                                <p class="uvindex">0</p>
+                                <p class="uvtext">Low</p>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <h4 class="card-heading">Wind Status</h4>
+                            <div class="content">
+                                <p class="windspeed">0</p>
+                                <p class="">Low</p>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <h4 class="card-heading">Sunrise & Sunset</h4>
+                            <div class="content">
+                                <p class="sunrise">0</p>
+                                <p class="sunset">Low</p>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <h4 class="card-heading">Humidity</h4>
+                            <div class="content">
+                                <p class="humidity">0</p>
+                                <p class="humiditystatus">Low</p>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <h4 class="card-heading">Visibility</h4>
+                            <div class="content">
+                                <p class="visibility">0</p>
+                                <p class="visibiltystatus">Low</p>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <h4 class="card-heading">Air Quality</h4>
+                            <div class="content">
+                                <p class="airquality">0</p>
+                                <p class="airqualitystatus">Low</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h6 align="left">Weather Details</h6>
+            </div>
+        </div>
+
+
+    </div>
+        
+    
+
+</body>
+</html>
+
