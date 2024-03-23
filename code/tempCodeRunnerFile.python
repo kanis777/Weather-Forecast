@@ -1,0 +1,33 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the bivariate function
+def f(x, y):
+    return 4*x+6*y-2*x*2-2*x*y-2*y*2
+
+# Create a grid of x and y values
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+
+# Evaluate the function at each point in the grid
+Z = f(X, Y)
+
+# Create a 3D surface plot of the function
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.plot_surface(X, Y, Z)
+
+# Find the maximum value of the function
+max_index = np.unravel_index(np.argmax(Z), Z.shape)
+max_x, max_y, max_z = X[max_index], Y[max_index], Z[max_index]
+print("Maximum value of the function is at x = {:.2f}, y = {:.2f}, z = {:.2f}".format(max_x, max_y, max_z))
+
+# Add labels and a title
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('f(x, y)')
+ax.set_title('Bivariate Function in 3D')
+
+# Show the plot
+plt.show()
